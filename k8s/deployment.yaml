@@ -16,12 +16,12 @@ spec:
     spec:
       containers:
       - name: python-app
-        image: quay.io/gabohr/demo-python-app:latest
+        image: quay.io/gabohr/demo-python-app:1.0.3-482d400
         ports:
         - containerPort: 8080
         env:
         - name: APP_VERSION
-          value: "1.0.2"
+          value: "1.0.3-482d400"
         livenessProbe:
           httpGet:
             path: /
