@@ -1,0 +1,12 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: gabriellas-python-app
+  labels:
+    app: gabriellas-python-app
+spec:
+  to:
+    kind: Service
+    name: gabriellas-python-app
+  port:
+    targetPort: http
